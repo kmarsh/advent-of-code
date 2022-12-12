@@ -4,10 +4,10 @@
 # How many Calories are those Elves carrying in total?
 
 puts ARGF.read
-        .split("\n\n")
-        .map {|elf| elf.split("\n").map(&:to_i) }
-        .map(&:sum)
-        .sort
-        .reverse
-        .take(3)
-        .sum
+         .split("\n\n")
+         .map {|elf| elf.split("\n").map(&:to_i) }
+         .map(&:sum)
+         .sort
+         .reverse
+         .take(3)
+         .sum
