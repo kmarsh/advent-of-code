@@ -11,7 +11,7 @@ ARGF.read
     .split("\n")
     .each {|l| n = l.split.map(&:to_i); left << n[0]; right << n[1] }
 
-left.each_with_index do |l, i|
+left.each do |l|
   times = right.count(l)
 
   sum += l * times
